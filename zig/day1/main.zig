@@ -22,7 +22,7 @@ test "Find Solution" {
         return error.SkipZigTest;
 
     const flags: File.OpenFlags = .{};
-    const file = try std.fs.cwd().openFile("./input", flags);
+    const file = try std.fs.cwd().openFile("../../subjects/day1/input", flags);
     defer file.close();
 
     var buffer: [100]u8 = undefined;
