@@ -17,7 +17,7 @@ fn nextLine(reader: anytype, buffer: []u8) !?[]const u8 {
 
 test "Part1" {
     const flags: File.OpenFlags = .{};
-    const file = try std.fs.cwd().openFile("./input", flags);
+    const file = try std.fs.cwd().openFile("../../subjects/day1/input", flags);
     defer file.close();
 
     var buffer: [100]u8 = undefined;

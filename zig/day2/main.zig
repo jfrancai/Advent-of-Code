@@ -23,7 +23,7 @@ const hashTable: [3][3]u8 = [3][3]u8{ [3]u8{ 3, 0, 6 }, [3]u8{ 6, 3, 0 }, [3]u8{
 
 test "Part1" {
     const flags: File.OpenFlags = .{};
-    const file = try std.fs.cwd().openFile("./input", flags);
+    const file = try std.fs.cwd().openFile("../../subjects/day2/input", flags);
     defer file.close();
 
     var buffer: [10]u8 = undefined;
@@ -56,7 +56,7 @@ const hashTable2: [3][3]u8 = [3][3]u8{ [3]u8{ 2, 0, 1 }, [3]u8{ 0, 1, 2 }, [3]u8
 
 test "Part2" {
     const flags: File.OpenFlags = .{};
-    const file = try std.fs.cwd().openFile("./input", flags);
+    const file = try std.fs.cwd().openFile("../../subjects/day2/input", flags);
     defer file.close();
 
     var buffer: [10]u8 = undefined;
